@@ -79,7 +79,7 @@ function deleteOperation(array &$items): void
 
     $removed = false;
     foreach ($items as $key => $value) {
-        if ($item === $itemName) {
+        if ($value === $itemName) {
             unset($items[$key]);
             $removed = true;
         }
